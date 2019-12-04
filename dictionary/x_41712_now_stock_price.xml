@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Price" max_length="40" name="x_41712_now_stock_price" type="collection">
+        <element function_definition="current.sys_created_on.addSeconds(-900)" function_field="true" label="Moment" max_length="40" name="moment" read_only="true" type="glide_date_time"/>
+        <element label="Spot" max_length="20" name="spot" type="price"/>
+        <element display="true" label="Symbol" max_length="5" name="symbol" type="string"/>
+    </element>
+</database>

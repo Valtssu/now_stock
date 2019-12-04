@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>symbol</name>
+        <rest_message_function display_value="GET NOW">f0d77ca21b9100109959ed3abc4bcb09</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-26 12:47:59</sys_created_on>
+        <sys_id>7748fce21b9100109959ed3abc4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>symbol</sys_name>
+        <sys_package display_value="NOW Stock" source="x_41712_now_stock">6efb28ea1b5100109959ed3abc4bcb14</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NOW Stock">6efb28ea1b5100109959ed3abc4bcb14</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_7748fce21b9100109959ed3abc4bcbfd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-26 12:47:59</sys_updated_on>
+        <type>string</type>
+        <value>NOW</value>
+    </sys_rest_message_fn_parameters>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="moment" label="Moment" language="en" table="x_41712_now_stock_price">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>moment</element>
+            <help/>
+            <hint/>
+            <label>Moment</label>
+            <language>en</language>
+            <name>x_41712_now_stock_price</name>
+            <plural>Moments</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-26 12:09:30</sys_created_on>
+            <sys_id>5f8fe46e1b5100109959ed3abc4bcbee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Moment</sys_name>
+            <sys_package display_value="NOW Stock" source="x_41712_now_stock">6efb28ea1b5100109959ed3abc4bcb14</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NOW Stock">6efb28ea1b5100109959ed3abc4bcb14</sys_scope>
+            <sys_update_name>sys_documentation_x_41712_now_stock_price_moment_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-26 12:09:30</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_41712_now_stock.price_user" name="x_41712_now_stock.price_user">d41e6caa1b5100109959ed3abc4bcbcb</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-26 12:03:01</sys_created_on>
+        <sys_id>9c1e6caa1b5100109959ed3abc4bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d41e6caa1b5100109959ed3abc4bcbcb</sys_name>
+        <sys_package display_value="NOW Stock" source="x_41712_now_stock">6efb28ea1b5100109959ed3abc4bcb14</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NOW Stock">6efb28ea1b5100109959ed3abc4bcb14</sys_scope>
+        <sys_update_name>sys_embedded_help_role_9c1e6caa1b5100109959ed3abc4bcbcd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-26 12:03:01</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

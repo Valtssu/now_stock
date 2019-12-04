@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>VL Get AAPl and NOW Quotes</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>true</run_once>
+        <script><![CDATA[var symb;
+//var i;
+
+getPrice(symb);
+
+function getPrice(){
+	for (i= 0; i  < 10; i++ ){
+	try {
+		var r = new sn_ws.RESTMessageV2('x_41712_now_stock.Get Price Financial Modeling Prep', 'GET Symbol');
+		r.setStringParameterNoEscape('symbol', symb);
+		var response = r.execute();
+		var responseBody = response.getBody();
+		var httpStatus = response.getStatusCode();
+		var responseObj = JSON.parse(responseBody);
+		gs.warn(responseObj.symbol + responseObj.price);
+		
+		var myStock = new GlideRecord('x_41712_now_stock_price');
+		myStock.setValue('symbol', responseObj.symbol);
+		myStock.setValue('spot', responseObj.price);
+		//gs.warn(myStock.symbol + myStock.price);
+		myStock.update();
+	}
+	catch(ex) {
+		var message = ex.message;
+	}
+	if (symb == 'NOW'){
+		symb ='AAPL';
+	}
+	else
+		symb = 'NOW';
+	
+		getPrice(symb);
+	
+	}
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-03 12:43:29</sys_created_on>
+        <sys_id>f1d8f03c1b2100109959ed3abc4bcb48</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>VL Get AAPl and NOW Quotes</sys_name>
+        <sys_package display_value="NOW Stock" source="x_41712_now_stock">6efb28ea1b5100109959ed3abc4bcb14</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NOW Stock">6efb28ea1b5100109959ed3abc4bcb14</sys_scope>
+        <sys_update_name>sys_script_fix_f1d8f03c1b2100109959ed3abc4bcb48</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-03 15:09:47</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>
